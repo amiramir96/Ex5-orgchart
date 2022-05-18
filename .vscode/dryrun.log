@@ -1,0 +1,10 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/mnt/c/Users/Amir/Desktop/Studies/year_B/semester_b/sys_prog_b/Ex5/orgchart-a-main'
+clang++-9  -std=c++2a -Werror -Wsign-conversion -Isources --compile Demo.cpp -o Demo.o
+clang++-9  -std=c++2a -Werror -Wsign-conversion -Isources --compile sources/myIter.cpp -o objects/myIter.o
+clang++-9  -std=c++2a -Werror -Wsign-conversion -Isources --compile sources/Node.cpp -o objects/Node.o
+clang++-9  -std=c++2a -Werror -Wsign-conversion -Isources --compile sources/OrgChart.cpp -o objects/OrgChart.o
+clang++-9  -std=c++2a -Werror -Wsign-conversion -Isources Demo.o objects/myIter.o objects/Node.o objects/OrgChart.o -o demo
+./demo
+make: Leaving directory '/mnt/c/Users/Amir/Desktop/Studies/year_B/semester_b/sys_prog_b/Ex5/orgchart-a-main'
+ 
